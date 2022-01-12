@@ -3,6 +3,12 @@ import java.util.*;
 
 public class Main {
 
+    public String replace(String content, String old, String replacement){
+        while(content.con(old)){
+            
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         if(args[0].equals("-h")|| args[0].equals("-help" )){
             System.out.println("Das Programm entfernt sämtliche in Latex gebräuchliche $-Symbole der Math-Umgebung und" +
@@ -81,6 +87,7 @@ public class Main {
         for (String s:result){
             add += s;
         }
+
         PrintWriter out = new PrintWriter("C:\\Users\\maxim\\Desktop\\edited" + filename);
         out.write(add);
         out.close();
